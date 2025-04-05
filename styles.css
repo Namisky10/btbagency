@@ -26,6 +26,15 @@ body {
   z-index: -2;
   pointer-events: none;
 }
+.hero p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
 
 /* Contenedores */
 section {
