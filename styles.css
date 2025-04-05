@@ -461,3 +461,13 @@ form button {
 body {
   padding-top: 70px; /* espacio para el navbar fijo */
 }
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -2;
+  filter: brightness(0.3); /* Opcional: oscurece el video para que el texto destaque */
+}
