@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Estilos generales del body */
 body {
   margin: 0;
   padding-top: 70px;
@@ -15,46 +14,15 @@ body {
   line-height: 1.6;
 }
 
-/* Nueva sección de video BTB */
-#btb-video-hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#btb-video-hero video {
+/* Video de fondo para pantalla completa */
+video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
-  background-size: cover;
-}
-
-.btb-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btb-titulo {
-  color: white;
-  font-size: 5rem;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 2px;
-  text-align: center;
 }
 
 /* Contenedores */
@@ -65,13 +33,11 @@ section {
   text-align: center;
 }
 
-/* Títulos */
 h1, h2, h3 {
   margin-bottom: 20px;
   font-weight: 600;
 }
 
-/* Botones */
 .btn {
   display: inline-block;
   padding: 14px 24px;
@@ -100,7 +66,6 @@ h1, h2, h3 {
   color: #0a0a0a;
 }
 
-/* HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -140,7 +105,6 @@ h1, h2, h3 {
   }
 }
 
-/* SECCIONES */
 .servicios,
 .estrategia,
 .soluciones,
@@ -149,7 +113,6 @@ h1, h2, h3 {
   background-color: rgba(15, 15, 15, 0.9);
 }
 
-/* Títulos sección */
 .servicios h2,
 .estrategia h2,
 .soluciones h2,
@@ -159,7 +122,6 @@ h1, h2, h3 {
   margin-bottom: 40px;
 }
 
-/* SERVICIOS */
 .servicio,
 .etapa,
 .solucion,
@@ -204,17 +166,14 @@ h1, h2, h3 {
   .etapas {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .soluciones-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .beneficios-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* FORMULARIO */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -244,7 +203,6 @@ form button {
   align-self: center;
 }
 
-/* Grupo teléfono */
 .telefono-group {
   display: flex;
   align-items: center;
@@ -268,7 +226,6 @@ form button {
   outline: none;
 }
 
-/* Partículas */
 #particles-js {
   position: fixed;
   width: 100%;
@@ -280,7 +237,6 @@ form button {
   pointer-events: none;
 }
 
-/* WhatsApp flotante */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -306,7 +262,6 @@ form button {
   transform: scale(1.1);
 }
 
-/* Barra de progreso */
 .progress-bar {
   position: fixed;
   top: 0;
@@ -318,7 +273,6 @@ form button {
   transition: width 0.2s ease;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
