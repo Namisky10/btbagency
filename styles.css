@@ -27,7 +27,6 @@ body {
   pointer-events: none;
 }
 
-
 /* Contenedores */
 section {
   padding: 80px 20px;
@@ -89,12 +88,18 @@ h1, h2, h3 {
   font-size: 42px;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
   font-size: 18px;
-  color: #ccc;
+  color: #ffffff;
   margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .hero-buttons {
@@ -356,13 +361,4 @@ form button {
     gap: 15px;
     font-size: 14px;
   }
-  .hero p {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 30px;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
-  padding: 15px 20px;
-  border-radius: 10px;
-  display: inline-block;
 }
-
