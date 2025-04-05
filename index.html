@@ -250,5 +250,14 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp Icon">
 </a>
   <div class="progress-bar" id="progress-bar"></div>
+  <script>
+  window.onscroll = function () {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / scrollHeight) * 100;
+    document.getElementById("progress-bar").style.width = scrollPercent + "%";
+  };
+</script>
+
 </body>
 </html>
