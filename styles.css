@@ -18,6 +18,7 @@ body {
 /* Nueva sección de video BTB */
 #btb-video-hero {
   position: relative;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
@@ -53,6 +54,7 @@ body {
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 /* Contenedores */
