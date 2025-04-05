@@ -216,9 +216,14 @@
     e.preventDefault();
 
     const data = new FormData(form);
-    const telefonoDestino = "34663623783"; // ← PON AQUÍ TU NÚMERO DE WHATSAPP (ej: 34611223344)
+    const nombre = data.get("nombre");
+    const servicio = data.get("servicio");
+    const mensajeUsuario = data.get("mensaje");
 
-    const mensaje = encodeURIComponent("¡Hola! Acabo de enviar el formulario desde la web de BTB Agency. ¿Podemos hablar?");
+    const telefonoDestino = "34663623783"; // ← Reemplaza con tu número de WhatsApp
+    const mensajeWhatsapp = encodeURIComponent(
+      `¡Hola! Soy ${nombre}. Estoy interesado/a en el servicio de "${servicio}".\n\nEste es mi mensaje:\n${mensajeUsuario}`
+    );
 
     fetch(form.action, {
       method: form.method,
@@ -233,7 +238,7 @@
 
         // Redirige a WhatsApp después de 2 segundos
         setTimeout(() => {
-          window.open(`https://wa.me/${telefonoDestino}?text=${mensaje}`, "_blank");
+          window.open(`https://wa.me/${telefonoDestino}?text=${mensajeWhatsapp}`, "_blank");
         }, 2000);
       } else {
         alert("Ha ocurrido un error. Por favor, inténtalo de nuevo.");
@@ -241,7 +246,5 @@
     });
   });
 </script>
-
-
 </body>
 </html>
