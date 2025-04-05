@@ -323,3 +323,25 @@ form button {
   pointer-events: none;
 }
 </style>
+.telefono-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.prefix {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.telefono-group input[type="tel"] {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+}
